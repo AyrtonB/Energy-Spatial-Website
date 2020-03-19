@@ -1093,10 +1093,10 @@ a:hover, a:active {
 # Modals
 --------------------------------------------------------------*/
 .modal-full {
-    min-width: 100%;
-    margin: 0;
+    min-width: 50%;
+    margin: 50;
 }
 
 .modal-full .modal-content {
-    min-height: 100vh;
+    min-height: 50vh;
 }
