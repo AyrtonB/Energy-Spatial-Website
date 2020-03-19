@@ -311,6 +311,20 @@
             {% include "components/map.html" %}
             {% endwith %}
 
+            {% with %}
+            {% set id="#HYFK3" %}
+            {% set text="Italy's Solar Energy" %}
+            {% set path="static/img/maps/HYFK3.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#DYHH8" %}
+            {% set text="Distribution of Energy Assets in Tanzania" %}
+            {% set path="static/img/maps/DYHH8.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
         </div><!-- .row -->
     </div><!-- .container -->
 </div><!-- .outer-container -->
@@ -557,6 +571,20 @@
 {% set id="HRJT7" %}
 {% set text="EV Charging Infrastructure & Population Density in Hong Kong" %}
 {% set path="static/img/maps/HRJT7.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="HYFK3" %}
+{% set text="Italy's Solar Energy" %}
+{% set path="static/img/maps/HYFK3.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="DYHH8" %}
+{% set text="Distribution of Energy Assets in Tanzania" %}
+{% set path="static/img/maps/DYHH8.png" %}
 {% include "components/modal.html" %}
 {% endwith %}
 
