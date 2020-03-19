@@ -1,25 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Heroku Flask Template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-        <h1 id="tittle">Heroku Flask Template</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="https://github.com/vetronus/heroku-flask-template">SOURCE CODE(GitHub)</a></li>
-                <li><a href="http://parthsarthee.com/">PARTH SARTHEE(Author)</a></li>
-                <li><a href="http://aroxbit.com">AROXBIT(Awesome Indie Startup)</a></li>
-            </ul>
-        </nav>
-        <h2>What is Heroku Flask Template</h2>
-        <p>
-            Heroku Flask Template is a simple web app programmed in Python-3 using flask micro-framework. It is created for begginers to understand the basics of creating a flask web app and deploying it on the Heroku. It can also be used as a template to create your new flask web apps which can then easily be deployable on Heroku.
-        </p><br>
-        <h3>You can download this plugin, or modify its source code from <a href="https://github.com/vetronus/heroku-flask-template">GitHub</a></h3>
-    </body>
+<head>
+    <title>Hello World</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+</head>
+<body>
+<header class="site-header">
+    <div class="site-branding">
+        <h1 class="site-title"><a href="#" rel="home"><img src="static/img/world_energy_logo.png" width=50 alt="Logo"></a></h1>
+    </div><!-- .site-branding -->
+
+    <div class="hamburger-menu">
+        <div class="menu-icon">
+            <img src="static/img/menu-icon.png" alt="menu icon" data-title="A random title">
+        </div><!-- .menu-icon -->
+
+        <div class="menu-close-icon">
+            <img src="static/img/x.png" alt="menu close icon">
+        </div><!-- .menu-close-icon -->
+    </div><!-- .hamburger-menu -->
+</header><!-- .site-header -->
+
+<nav class="site-navigation flex flex-column justify-content-between">
+    <div class="site-branding d-none d-lg-block ">
+        <h1 class="site-title"><a href="#" rel="home"><img src="static/img/world_energy_logo_grey.png" width=150 alt="Logo"></a></h1>
+    </div><!-- .site-branding -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="main-menu flex flex-column justify-text-center">
+                    This page contains submissions of maps made by the 19/20 cohort of UCL's Spatial Analysis of Energy Data course
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav><!-- .site-navigation -->
+
+<div class="nav-bar-sep d-lg-none"></div>
+
+<div class="outer-container">
+    <br>
+    
+    <div class="container portfolio-page">
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="portfolio-content">
+                    <figure>
+                        <img src="static/img/maps/EOKOR82.png" alt="" data-toggle="modal" data-target="#EOKOR82">
+                    </figure>
+                    
+                    <div class="entry-content flex flex-column align-items-center justify-content-center">
+                        <h3><a href="#">Tidal Energy Potential to Power the Nigerian Rail Sector</a></h3>
+                    </div><!-- .entry-content -->
+
+                </div><!-- .portfolio-content -->
+            </div><!-- .col -->
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="portfolio-content">
+                    <figure>
+                        <img src="static/img/maps/DQVF4.png" alt="">
+                    </figure>
+                    
+                    <div class="entry-content flex flex-column align-items-center justify-content-center">
+                        <h3><a href="#">Efficiency of photovoltaic panels and population density in Malawi</a></h3>
+                    </div><!-- .entry-content -->
+
+                </div><!-- .portfolio-content -->
+            </div><!-- .col -->
+
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .outer-container -->
+
+<script type='text/javascript' src='static/js/jquery.js'></script>
+<script type='text/javascript' src='static/js/custom.js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js'></script>
+
+<script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+
+</body>
 </html>
