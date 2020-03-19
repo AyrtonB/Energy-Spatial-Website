@@ -65,31 +65,89 @@
     <div class="container portfolio-page">
         <div class="row">
 
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="portfolio-content">
-                    <figure>
-                        <img src="static/img/maps/EOKOR82.png" alt="">
-                    </figure>
-                    
-                    <div class="entry-content flex flex-column align-items-center justify-content-center">
-                        <h3><a href="#" data-toggle="modal" data-target="#EOKOR82">Tidal Energy Potential to Power the Nigerian Rail Sector</a></h3>
-                    </div><!-- .entry-content -->
+            {% with %}
+            {% set id="#EOKOR82" %}
+            {% set text="Tidal Energy Potential to Power the Nigerian Rail Sector" %}
+            {% set path="static/img/maps/EOKOR82.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
 
-                </div><!-- .portfolio-content -->
-            </div><!-- .col -->
-            
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="portfolio-content">
-                    <figure>
-                        <img src="static/img/maps/DQVF4.png" alt="">
-                    </figure>
-                    
-                    <div class="entry-content flex flex-column align-items-center justify-content-center">
-                        <h3><a href="#" data-toggle="modal" data-target="#DQVF4">Efficiency of photovoltaic panels and population density in Malawi</a></h3>
-                    </div><!-- .entry-content -->
+            {% with %}
+            {% set id="#DQVF4" %}
+            {% set text="Efficiency of photovoltaic panels and population density in Malawi" %}
+            {% set path="static/img/maps/DQVF4.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
 
-                </div><!-- .portfolio-content -->
-            </div><!-- .col -->
+            {% with %}
+            {% set id="#GWMH2" %}
+            {% set text="Wind & Solar Power in Isolated Rural Areas of Mexico" %}
+            {% set path="static/img/maps/GWMH2.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#HSBT4" %}
+            {% set text="Nuclear Power Plants in South Korea" %}
+            {% set path="static/img/maps/HSBT4.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#DNNT1" %}
+            {% set text="Fuel Poverty Across England" %}
+            {% set path="static/img/maps/DNNT1.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#DPKH4" %}
+            {% set text="Solar Power Plants and Solar Potential Distributuion in China" %}
+            {% set path="static/img/maps/DPKH4.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#DVTW4" %}
+            {% set text="Evolution of Renewable Energy in Chile" %}
+            {% set path="static/img/maps/DVTW4.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#DZQN2" %}
+            {% set text="Solar Power Potential in Peru" %}
+            {% set path="static/img/maps/DZQN2.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#FMRH8" %}
+            {% set text="Estimation of Annual Electricity Consumption of Charging Stations in London" %}
+            {% set path="static/img/maps/FMRH8.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#FRZY8" %}
+            {% set text="Lao Annual Precipitation" %}
+            {% set path="static/img/maps/FRZY8.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#FVZV7" %}
+            {% set text="Germany's Cross-Border Electricity Flows" %}
+            {% set path="static/img/maps/FVZV7.gif" %}
+            {% include "components/map.html" %}
+            {% endwith %}
+
+            {% with %}
+            {% set id="#FWRQ9" %}
+            {% set text="Africa Grid Efficiency and Electricity Consumption" %}
+            {% set path="static/img/maps/FWRQ9.png" %}
+            {% include "components/map.html" %}
+            {% endwith %}
 
         </div><!-- .row -->
     </div><!-- .container -->
@@ -106,6 +164,76 @@
 {% set id="DQVF4" %}
 {% set text="Efficiency of photovoltaic panels and population density in Malawi" %}
 {% set path="static/img/maps/DQVF4.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="GWMH2" %}
+{% set text="Wind & Solar Power in Isolated Rural Areas of Mexico" %}
+{% set path="static/img/maps/GWMH2.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="HSBT4" %}
+{% set text="Nuclear Power Plants in South Korea" %}
+{% set path="static/img/maps/HSBT4.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="DNNT1" %}
+{% set text="Fuel Poverty Across England" %}
+{% set path="static/img/maps/DNNT1.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="DPKH4" %}
+{% set text="Solar Power Plants and Solar Potential Distributuion in China" %}
+{% set path="static/img/maps/DPKH4.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="DVTW4" %}
+{% set text="Evolution of Renewable Energy in Chile" %}
+{% set path="static/img/maps/DVTW4.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="DZQN2" %}
+{% set text="Solar Power Potential in Peru" %}
+{% set path="static/img/maps/DZQN2.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="FMRH8" %}
+{% set text="Estimation of Annual Electricity Consumption of Charging Stations in London" %}
+{% set path="static/img/maps/FMRH8.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="FRZY8" %}
+{% set text="Lao Annual Precipitation" %}
+{% set path="static/img/maps/FRZY8.png" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="FVZV7" %}
+{% set text="Germany's Cross-Border Electricity Flows" %}
+{% set path="static/img/maps/FVZV7.gif" %}
+{% include "components/modal.html" %}
+{% endwith %}
+
+{% with %}
+{% set id="FWRQ9" %}
+{% set text="Africa Grid Efficiency and Electricity Consumption" %}
+{% set path="static/img/maps/FWRQ9.png" %}
 {% include "components/modal.html" %}
 {% endwith %}
 
